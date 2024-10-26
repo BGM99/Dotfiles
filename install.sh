@@ -94,6 +94,7 @@ install() {
     echo -e "    - ${MAGENTA}~/Pictures/wallpapers/others${NORMAL}"
     mkdir -p ~/Music
     mkdir -p ~/Documents
+    mkdir -p ~/Code
     mkdir -p ~/Pictures/wallpapers/others
     sleep 0.2
 

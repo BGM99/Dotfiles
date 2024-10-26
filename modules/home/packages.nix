@@ -39,6 +39,15 @@ in
     zenity
     winetricks
     wineWowPackages.wayland
+    brave
+    #spotify
+    keepassxc
+    #insomnia
+    #pscircle                          # process 
+
+    # IDE Apps
+    #jetbrains.clion
+    #godot_4
 
     # C / C++
     gcc
