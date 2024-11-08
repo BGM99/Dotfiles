@@ -25,6 +25,11 @@
       criticalPowerAction = "PowerOff";
     };
 
+    #Battery Rule for max charging of 80%
+    udev.extraRules = ''
+      SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_ONLINE}=="1", RUN+="/bin/sh -c 'echo 80 > /sys/class/power_supply/BAT0/charge_control_end_threshold'"
+    '';
+
     # auto-cpufreq = {
     #   enable = true;
     #   settings = {
