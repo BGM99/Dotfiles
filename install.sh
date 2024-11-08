@@ -95,6 +95,7 @@ install() {
     mkdir -p ~/Music
     mkdir -p ~/Documents
     mkdir -p ~/Code
+    mkdir -p ~/Data/Password
     mkdir -p ~/Pictures/wallpapers/others
     sleep 0.2
 
