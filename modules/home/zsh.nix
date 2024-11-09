@@ -38,8 +38,8 @@
       cdnix = "cd ~/nixos-config && codium ~/nixos-config";
       ns = "nix-shell --run zsh";
       nix-shell = "nix-shell --run zsh";
-      nix-switch = "sudo nixos-rebuild switch --flake ~/nixos-config#${host}";
-      nix-switchu = "sudo nixos-rebuild switch --upgrade --flake ~/nixos-config#${host}";
+      rb = "sudo nixos-rebuild switch --flake ~/Dotfiles#${host}";
+      rbu = "sudo nixos-rebuild switch --upgrade --flake ~/Dotfiles#${host}";
       nix-flake-update = "sudo nix flake update ~/nixos-config#";
       nix-clean = "sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo rm /nix/var/nix/gcroots/auto/* && nix-collect-garbage && nix-collect-garbage -d";
 
@@ -62,6 +62,7 @@
       gchb = "git checkout -b";
       gcoe = "git config user.email";
       gcon = "git config user.name";
+      lg = "lazygit";
 
       # python
       piv = "python -m venv .venv";

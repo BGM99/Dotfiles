@@ -40,7 +40,6 @@ in
     winetricks
     wineWowPackages.wayland
     brave
-    #spotify
     keepassxc
     #insomnia
     #pscircle                          # process 
