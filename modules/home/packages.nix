@@ -45,8 +45,8 @@ in
     #pscircle                          # process 
 
     # IDE Apps
-    #jetbrains.clion
-    #godot_4
+    jetbrains.clion
+    godot_4
 
     # C / C++
     gcc

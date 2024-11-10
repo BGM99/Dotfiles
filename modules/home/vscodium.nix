@@ -12,12 +12,12 @@
       ms-python.python
       # C/C++
       ms-vscode.cpptools
-      # OCaml
-      ocamllabs.ocaml-platform
+      # Docker
+      ms-azuretools.vscode-docker
 
       # Color theme
-      catppuccin.catppuccin-vsc
-      catppuccin.catppuccin-vsc-icons
+      #catppuccin.catppuccin-vsc
+      #catppuccin.catppuccin-vsc-icons
     ];
     userSettings = {
       "update.mode" = "none";
@@ -50,8 +50,6 @@
       "explorer.openEditors.visible" = 0;
       "breadcrumbs.enabled" = false;
       "editor.renderControlCharacters" = false;
-      "workbench.activityBar.location" = "hidden";
-      "workbench.statusBar.visible" = false;
       "editor.scrollbar.verticalScrollbarSize" = 2;
       "editor.scrollbar.horizontalScrollbarSize" = 2;
       "editor.scrollbar.vertical" = "hidden";

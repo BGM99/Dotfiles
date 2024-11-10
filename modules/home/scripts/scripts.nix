@@ -1,6 +1,7 @@
 {pkgs, ...}: let
   wall-change = pkgs.writeShellScriptBin "wall-change" (builtins.readFile ./scripts/wall-change.sh);
   wallpaper-picker = pkgs.writeShellScriptBin "wallpaper-picker" (builtins.readFile ./scripts/wallpaper-picker.sh);
+  live-wp-picker = pkgs.writeScriptBin "live-wp-picker" (builtins.readFile ./scripts/live-wp-picker.sh);
   
   runbg = pkgs.writeShellScriptBin "runbg" (builtins.readFile ./scripts/runbg.sh);
   music = pkgs.writeShellScriptBin "music" (builtins.readFile ./scripts/music.sh);
@@ -27,6 +28,7 @@ in {
   home.packages = with pkgs; [
     wall-change
     wallpaper-picker
+    live-wp-picker
     
     runbg
     music

@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-PIDS=$(pgrep -f "swaybg")
+#PIDS=$(pgrep -f "swaybg")
 
-swaybg -m fill -i $1 &
+#swaybg -m fill -i $1 &
 
-if [ -n "$PIDS" ]; then
-  echo "$PIDS" | xargs kill
-fi
+#if [ -n "$PIDS" ]; then
+#  echo "$PIDS" | xargs kill
+#fi
+
+swww img $1
