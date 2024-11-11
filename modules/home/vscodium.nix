@@ -15,9 +15,10 @@
       # Docker
       ms-azuretools.vscode-docker
 
-      # Color theme
+      # Color themes
       #catppuccin.catppuccin-vsc
-      #catppuccin.catppuccin-vsc-icons
+      catppuccin.catppuccin-vsc-icons
+      teabyii.ayu
     ];
     userSettings = {
       "update.mode" = "none";
@@ -28,7 +29,7 @@
       "editor.fontFamily" = "'JetBrainsMono Nerd Font', 'SymbolsNerdFont', 'monospace', monospace";
       "terminal.integrated.fontFamily" = "'JetBrainsMono Nerd Font', 'SymbolsNerdFont'";
       "editor.fontSize" = 16;
-      "workbench.colorTheme" = "Catppuccin Mocha";
+      "workbench.colorTheme" = "Ayu Dark Bordered";
       "workbench.iconTheme" = "catppuccin-mocha";
       "catppuccin.accentColor" = "lavender";
       "vsicons.dontShowNewVersionMessage" = true;

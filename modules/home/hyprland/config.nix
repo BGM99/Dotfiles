@@ -147,9 +147,9 @@
         "$mainMod, J, togglesplit,"
         "$mainMod, E, exec, nautilus"
         "$mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped"
-        "$mainMod, C ,exec, hyprpicker -a"
+        "$mainMod, C ,exec, codium"
         "$mainMod, W,exec, wallpaper-picker"
-        "$mainMod SHIFT, W, exec, vm-start"
+        "$mainMod SHIFT, W, exec, live-wp-picker"
 
         # screenshot
         "$mainMod, Print, exec, grimblast --notify --cursor --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
