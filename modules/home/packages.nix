@@ -41,11 +41,14 @@ in
     wineWowPackages.wayland
     brave
     keepassxc
-    #insomnia
+    insomnia
     #pscircle                          # process 
 
     # IDE Apps
     jetbrains.clion
+    jetbrains.pycharm-professional
+    jetbrains.rust-rover
+    jetbrains.idea-community-src
     godot_4
 
     # C / C++

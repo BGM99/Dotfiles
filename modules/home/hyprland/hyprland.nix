@@ -6,7 +6,7 @@
     hyprpicker
     grim
     slurp
-    wl-clip-persist
+    # wl-clip-persist
     wf-recorder
     glib
     wayland
