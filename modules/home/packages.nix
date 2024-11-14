@@ -42,6 +42,7 @@ in
     brave
     keepassxc
     insomnia
+    musescore
     #pscircle                          # process 
 
     # IDE Apps
@@ -54,9 +55,6 @@ in
     # C / C++
     gcc
     gnumake
-
-    # Python
-    python3
 
     bleachbit                         # cache cleaner
     cmatrix
