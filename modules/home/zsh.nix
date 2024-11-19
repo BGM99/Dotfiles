@@ -35,12 +35,12 @@
       tree = "eza --icons --tree --group-directories-first";
 
       # Nixos
-      cdnix = "cd ~/nixos-config && codium ~/nixos-config";
+      cdnix = "cd ~/Dotfiles && codium ~/Dotfiles";
       ns = "nix-shell --run zsh";
       nix-shell = "nix-shell --run zsh";
       rb = "sudo nixos-rebuild switch --flake ~/Dotfiles#${host}";
-      rbu = "sudo nixos-rebuild switch --upgrade --flake ~/Dotfiles#${host}";
-      nix-flake-update = "sudo nix flake update ~/nixos-config#";
+      rbug = "sudo nixos-rebuild switch --upgrade --flake ~/Dotfiles#${host}";
+      rbud = "sudo nix flake update ~/Dotfiles#";
       nix-clean = "sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo rm /nix/var/nix/gcroots/auto/* && nix-collect-garbage && nix-collect-garbage -d";
 
       # Git
