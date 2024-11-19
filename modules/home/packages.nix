@@ -50,17 +50,23 @@ in
     jetbrains.pycharm-professional
     jetbrains.rust-rover
     jetbrains.idea-community-src
+    jetbrains.rider
     godot_4
 
     # C / C++
     gcc
     gnumake
+    cmake
+
+    # C#
+    mono
 
     bleachbit                         # cache cleaner
     cmatrix
     gparted                           # partition manager
     ffmpeg
     imv                               # image viewer
+    icu
     killall
     libnotify
 	  man-pages					            	  # extra man pages
