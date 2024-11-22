@@ -1,4 +1,4 @@
-{inputs, username, host, ...}: {
+{inputs, username, host, pkgs-unstable, ...}: {
   imports =
        [(import ./aseprite/aseprite.nix)]         # pixel art editor
     ++ [(import ./audacious/audacious.nix)]       # music player

@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }: 
+{ inputs, pkgs, pkgs-unstable, ... }: 
 let 
   _2048 = pkgs.callPackage ../../pkgs/2048/default.nix {}; 
 in
@@ -51,7 +51,7 @@ in
     jetbrains.rust-rover
     jetbrains.idea-community-src
     jetbrains.rider
-    godot_4
+    pkgs-unstable.godot_4
 
     # C / C++
     gcc

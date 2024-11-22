@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs?ref=master";
     nur.url = "github:nix-community/NUR";
   
     hypr-contrib.url = "github:hyprwm/contrib";
@@ -40,13 +41,17 @@
     spicetify-nix.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { nixpkgs, self, ...} @ inputs:
+  outputs = { nixpkgs, nixpkgs-unstable, self, ...} @ inputs:
   let
     username = "bg";
     system = "x86_64-linux";
     pkgs = import nixpkgs {
       inherit system;
       config.allowUnfree = true;
+    };
+    pkgs-unstable = import nixpkgs-unstable {
+      inherit system;
+      config = { allowUnfree = true; };
     };
     lib = nixpkgs.lib;
   in
@@ -55,17 +60,17 @@
       desktop = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [ (import ./hosts/desktop) ];
-        specialArgs = { host="desktop"; inherit self inputs username ; };
+        specialArgs = { host="desktop"; inherit self inputs username pkgs-unstable ; };
       };
       laptop = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [ (import ./hosts/laptop) ];
-        specialArgs = { host="laptop"; inherit self inputs username ; };
+        specialArgs = { host="laptop"; inherit self inputs username pkgs-unstable ; };
       };
        vm = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [ (import ./hosts/vm) ];
-        specialArgs = { host="vm"; inherit self inputs username ; };
+        specialArgs = { host="vm"; inherit self inputs username pkgs-unstable ; };
       };
     };
   };
