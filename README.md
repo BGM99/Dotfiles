@@ -1,7 +1,7 @@
 <h1 align="center">
    <img src="./.github/assets/logo/nixos-logo.png  " width="100px" /> 
    <br>
-      Frost-Phoenix's Flakes 
+      NixOS Flakes Configuration
    <br>
       <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="600px" /> <br>
    <div align="center">
@@ -9,11 +9,8 @@
    <div align="center">
       <p></p>
       <div align="center">
-         <a href="https://github.com/Frost-Phoenix/nixos-config/stargazers">
-            <img src="https://img.shields.io/github/stars/Frost-Phoenix/nixos-config?color=F5BDE6&labelColor=303446&style=for-the-badge&logo=starship&logoColor=F5BDE6">
-         </a>
-         <a href="https://github.com/Frost-Phoenix/nixos-config/">
-            <img src="https://img.shields.io/github/repo-size/Frost-Phoenix/nixos-config?color=C6A0F6&labelColor=303446&style=for-the-badge&logo=github&logoColor=C6A0F6">
+         <a href="https://github.com/BGM99/Dotfiles/">
+            <img src="https://img.shields.io/github/repo-size/BGM99/Dotfiles?color=C6A0F6&labelColor=303446&style=for-the-badge&logo=github&logoColor=C6A0F6">
          </a>
          <a = href="https://nixos.org">
             <img src="https://img.shields.io/badge/NixOS-unstable-blue.svg?style=for-the-badge&labelColor=303446&logo=NixOS&logoColor=white&color=91D7E3">
@@ -37,17 +34,6 @@
    <img src="./.github/assets/screenshots/3.png" /> <br>
    Screenshots last updated <b>2024-04-09</b>
 </p>
-
-<details>
-<summary>
-OLD (EXPAND)
-</summary>
-<p align="center">
-   <img src="./.github/assets/screenshots/1.old.png" width="800px" /> <br>
-   <img src="./.github/assets/screenshots/2.old.png" width="800px" /> <br>
-   <img src="./.github/assets/screenshots/3.old.png" width="800px" /> <br>
-</p>
-</details>
 
 # 🗃️ Overview
 
@@ -88,6 +74,7 @@ OLD (EXPAND)
 | **Screen Recording**        | [wf-recorder][wf-recorder] |
 | **Clipboard**               | [wl-clip-persist][wl-clip-persist] |
 | **Color Picker**            | [hyprpicker][hyprpicker] |
+| **Wallpaper Controller**    | [swww][swww] |
 
 
 ### 📝 Shell aliases
@@ -491,3 +478,4 @@ Other dotfiles that I learned / copy from:
 [catppuccin-papirus-folders]: https://github.com/catppuccin/papirus-folders
 [Nordzy-cursors]: https://github.com/alvatip/Nordzy-cursors
 [maxfetch]: https://github.com/jobcmax/maxfetch
+[swww]: https://github.com/LGFae/swww
