@@ -42,8 +42,13 @@ in
     brave
     keepassxc
     insomnia
+    blender
+    #pscircle                          # process
+    prusa-slicer
+
+    #music
     musescore
-    #pscircle                          # process 
+    helio-workstation
 
     # IDE Apps
     jetbrains.clion
