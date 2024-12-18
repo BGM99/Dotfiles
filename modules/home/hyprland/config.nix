@@ -53,7 +53,6 @@
       };
 
       dwindle = {
-        no_gaps_when_only = true;
         force_split = 0;
         special_scale_factor = 1.0;
         split_width_multiplier = 1.0;
@@ -65,7 +64,6 @@
       master = {
         new_status = "master";
         special_scale_factor = 1;
-        no_gaps_when_only = false;
       };
 
       decoration = {
@@ -88,13 +86,14 @@
           xray = true;
         };
 
-        drop_shadow = true;
-
-        shadow_ignore_window = true;
-        shadow_offset = "0 2";
-        shadow_range = 20;
-        shadow_render_power = 3;
-        "col.shadow" = "rgba(00000055)";
+        shadow = {
+          enabled = true;
+          ignore_window = true;
+          offset = "0 2";
+          range = 20;
+          render_power = 3;
+          color = "rgba(00000055)";
+        };
       };
 
       animations = {
@@ -289,8 +288,22 @@
         "noinitialfocus,class:^(xwaylandvideobridge)$"
         "maxsize 1 1,class:^(xwaylandvideobridge)$"
         "noblur,class:^(xwaylandvideobridge)$"
+
+        # No gaps when only
+        "bordersize 0, floating:0, onworkspace:w[t1]"
+        "rounding 0, floating:0, onworkspace:w[t1]"
+        "bordersize 0, floating:0, onworkspace:w[tg1]"
+        "rounding 0, floating:0, onworkspace:w[tg1]"
+        "bordersize 0, floating:0, onworkspace:f[1]"
+        "rounding 0, floating:0, onworkspace:f[1]"
       ];
 
+      # No gaps when only
+      workspace = [
+        "w[t1], gapsout:0, gapsin:0"
+        "w[tg1], gapsout:0, gapsin:0"
+        "f[1], gapsout:0, gapsin:0"
+      ];
     };
 
     extraConfig = "
