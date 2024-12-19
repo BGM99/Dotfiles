@@ -45,6 +45,7 @@ in
     blender
     #pscircle                          # process
     prusa-slicer
+    qFlipper
 
     #music
     musescore
@@ -56,7 +57,7 @@ in
     jetbrains.rust-rover
     jetbrains.idea-community-src
     jetbrains.rider
-    pkgs-unstable.godot_4
+    godot_4
 
     # C / C++
     gcc

@@ -9,4 +9,5 @@
     };
   };
   hardware.enableRedistributableFirmware = true;
+  hardware.flipperzero.enable = true;
 }
