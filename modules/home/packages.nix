@@ -40,6 +40,7 @@ in
     winetricks
     wineWowPackages.wayland
     brave
+    thunderbird
     keepassxc
     insomnia
     blender
