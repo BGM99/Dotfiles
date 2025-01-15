@@ -15,6 +15,9 @@
       # Docker
       ms-azuretools.vscode-docker
 
+      # Github Actions
+      github.vscode-github-actions
+
       # Color themes
       #catppuccin.catppuccin-vsc
       catppuccin.catppuccin-vsc-icons

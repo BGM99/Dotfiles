@@ -38,6 +38,7 @@ in
     yt-dlp-light
     zenity
     winetricks
+    nwg-displays
     wineWowPackages.wayland
     brave
     thunderbird
