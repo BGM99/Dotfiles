@@ -69,6 +69,11 @@ in
     # C#
     mono
 
+    # Haskell
+    ghc
+    haskell-language-server
+    cabal-install
+
     bleachbit                         # cache cleaner
     cmatrix
     gparted                           # partition manager

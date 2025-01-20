@@ -18,6 +18,10 @@
       # Github Actions
       github.vscode-github-actions
 
+      # Haskell
+      justusadam.language-haskell
+      haskell.haskell
+
       # Color themes
       #catppuccin.catppuccin-vsc
       catppuccin.catppuccin-vsc-icons
