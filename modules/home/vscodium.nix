@@ -22,6 +22,9 @@
       justusadam.language-haskell
       haskell.haskell
 
+      # PDF
+      tomoki1207.pdf
+
       # Color themes
       #catppuccin.catppuccin-vsc
       catppuccin.catppuccin-vsc-icons

@@ -40,6 +40,7 @@ in
     winetricks
     nwg-displays
     wineWowPackages.wayland
+    drawio
     brave
     thunderbird
     keepassxc
