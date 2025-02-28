@@ -3,6 +3,7 @@
   # imports = [ inputs.nix-gaming.nixosModules.default ];
   nix = {
     settings = {
+      download-buffer-size = 1024 * 1024 * 1024; # 1024 MiB
       auto-optimise-store = true;
       experimental-features = [ "nix-command" "flakes" ];
       substituters = [ "https://nix-gaming.cachix.org" ];
@@ -25,7 +26,7 @@
     git
   ];
 
-  time.timeZone = "Europe/Paris";
+  time.timeZone = "Europe/Berlin";
   i18n.defaultLocale = "en_US.UTF-8";
   nixpkgs.config.allowUnfree = true;
   system.stateVersion = "24.05";
