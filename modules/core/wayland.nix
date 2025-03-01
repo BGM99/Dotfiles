@@ -1,17 +1,26 @@
 { inputs, pkgs, ... }:
 {
-  programs.hyprland.enable = true;
-  xdg.portal = {
+  programs.hyprland = {
     enable = true;
-    wlr.enable = true;
-    xdgOpenUsePortal = true;
-    extraPortals = [
-      pkgs.xdg-desktop-portal-hyprland
-      pkgs.xdg-desktop-portal-gtk
-    ];
+    package = inputs.hyprland.packages.${pkgs.system}.default;
+    portalPackage =
+      inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland;
   };
 
-  environment.systemPackages = with pkgs; [
-    # xwaylandvideobridge
-  ];
+  xdg.portal = {
+    enable = true;
+    xdgOpenUsePortal = true;
+    config = {
+      common.default = [ "gtk" ];
+      hyprland.default = [
+        "gtk"
+        "hyprland"
+      ];
+    };
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk
+      # inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland
+      # pkgs.xdg-desktop-portal-hyprland
+    ];
+  };
 }
