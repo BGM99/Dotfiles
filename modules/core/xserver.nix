@@ -3,6 +3,7 @@
   services = {
     xserver = {
       enable = true;
+      videoDrivers = ["modesetting"];
       xkb.layout = "de";
     };
 
