@@ -12,6 +12,8 @@ in
     evince                            # gnome pdf viewer
     eza                               # ls replacement
     entr                              # perform action when file change
+    nixfmt-rfc-style                  # nix formatter
+    shfmt                             # bash formatter
     fd                                # find replacement
     file                              # Show file information 
     fzf                               # fuzzy finder
@@ -30,6 +32,7 @@ in
     prismlauncher                     # minecraft launcher
     ripgrep                           # grep replacement
     soundwireserver                   # pass audio to android phone
+    treefmt2                          # project formatter
     tdf                               # cli pdf viewer
     todo                              # cli todo list
     toipe                             # typing test in the terminal
