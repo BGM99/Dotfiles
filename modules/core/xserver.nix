@@ -1,9 +1,9 @@
-{ pkgs, username, ... }: 
+{ pkgs, username, ... }:
 {
   services = {
     xserver = {
       enable = true;
-      videoDrivers = ["modesetting"];
+      videoDrivers = [ "modesetting" ];
       xkb.layout = "de";
     };
 

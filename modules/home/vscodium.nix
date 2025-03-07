@@ -1,4 +1,4 @@
-{ pkgs, ... }: 
+{ pkgs, ... }:
 {
   programs.vscode = {
     enable = true;
@@ -6,7 +6,7 @@
     extensions = with pkgs.vscode-extensions; [
       # nix language
       bbenoist.nix
-      # nix-shell suport 
+      # nix-shell suport
       arrterian.nix-env-selector
       # python
       ms-python.python
@@ -36,8 +36,10 @@
       "window.titleBarStyle" = "custom"; # needed otherwise vscode crashes, see https://github.com/NixOS/nixpkgs/issues/246509
 
       "window.menuBarVisibility" = "toggle";
-      "editor.fontFamily" = "'JetBrainsMono Nerd Font', 'SymbolsNerdFont', 'monospace', monospace";
-      "terminal.integrated.fontFamily" = "'JetBrainsMono Nerd Font', 'SymbolsNerdFont'";
+      "editor.fontFamily" =
+        "'JetBrainsMono Nerd Font', 'SymbolsNerdFont', 'monospace', monospace";
+      "terminal.integrated.fontFamily" =
+        "'JetBrainsMono Nerd Font', 'SymbolsNerdFont'";
       "editor.fontSize" = 16;
       "workbench.colorTheme" = "Ayu Dark Bordered";
       "workbench.iconTheme" = "catppuccin-mocha";
@@ -84,9 +86,7 @@
       "C_Cpp.vcFormat.indent.caseLabels" = true;
       "C_Cpp.intelliSenseCacheSize" = 2048;
       "C_Cpp.intelliSenseMemoryLimit" = 2048;
-      "C_Cpp.default.browse.path" = [
-        ''''${workspaceFolder}/**''
-      ];
+      "C_Cpp.default.browse.path" = [ ''''${workspaceFolder}/**'' ];
       "C_Cpp.default.cStandard" = "gnu11";
       "C_Cpp.inlayHints.parameterNames.hideLeadingUnderscores" = false;
       "C_Cpp.intelliSenseUpdateDelay" = 500;

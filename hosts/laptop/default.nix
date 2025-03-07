@@ -1,4 +1,4 @@
-{ pkgs, config, ... }: 
+{ pkgs, config, ... }:
 {
   imports = [
     ./hardware-configuration.nix
@@ -11,12 +11,12 @@
     cpupower-gui
     powertop
   ];
-  
-  services = {    
+
+  services = {
     # thermald.enable = true;
     # cpupower-gui.enable = true;
     power-profiles-daemon.enable = true;
- 
+
     upower = {
       enable = true;
       percentageLow = 20;
@@ -43,13 +43,14 @@
   powerManagement.cpuFreqGovernor = "performance";
 
   boot = {
-    kernelModules = ["acpi_call"];
-    extraModulePackages = with config.boot.kernelPackages;
+    kernelModules = [ "acpi_call" ];
+    extraModulePackages =
+      with config.boot.kernelPackages;
       [
         acpi_call
         cpupower
       ]
-      ++ [pkgs.cpupower-gui];
+      ++ [ pkgs.cpupower-gui ];
   };
 
   # bluetooth

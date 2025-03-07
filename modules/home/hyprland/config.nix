@@ -1,11 +1,11 @@
-{ ... }: 
+{ ... }:
 {
   wayland.windowManager.hyprland = {
     settings = {
 
-      # monitor settings from nwg-displays 
+      # monitor settings from nwg-displays
       source = "~/.config/hypr/monitors.conf";
-      
+
       # autostart
       exec-once = [
         "dbus-update-activation-environment --all --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
@@ -23,7 +23,7 @@
 
       input = {
         kb_layout = "de";
-        kb_options ="grp:alt_caps_toggle"; 
+        kb_options = "grp:alt_caps_toggle";
         numlock_by_default = true;
         follow_mouse = 1;
         sensitivity = 0;
