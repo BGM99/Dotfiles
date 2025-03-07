@@ -56,6 +56,7 @@ in
     #music
     musescore
     helio-workstation
+    vital
 
     # IDE Apps
     jetbrains.clion

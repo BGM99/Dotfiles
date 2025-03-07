@@ -291,6 +291,19 @@
         "maxsize 1 1,class:^(xwaylandvideobridge)$"
         "noblur,class:^(xwaylandvideobridge)$"
 
+        # -- Fix odd behaviors in IntelliJ IDEs --
+        #! Fix splash screen showing in weird places and prevent annoying focus takeovers
+        "center,class:^(jetbrains-.*)$,title:^(splash)$,floating:1"
+        "nofocus,class:^(jetbrains-.*)$,title:^(splash)$,floating:1"
+        "noborder,class:^(jetbrains-.*)$,title:^(splash)$,floating:1"
+
+        #! Center popups/find windows
+        "center,class:^(jetbrains-.*)$,title:^( )$,floating:1"
+        "stayfocused,class:^(jetbrains-.*)$,title:^( )$,floating:1"
+        "noborder,class:^(jetbrains-.*)$,title:^( )$,floating:1"
+        #! Disable window flicker when autocomplete or tooltips appear
+        "nofocus,class:^(jetbrains-.*)$,title:^(win.*)$,floating:1 ]"
+
         # No gaps when only
         "bordersize 0, floating:0, onworkspace:w[t1]"
         "rounding 0, floating:0, onworkspace:w[t1]"
