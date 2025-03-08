@@ -11,6 +11,7 @@
     ++ [(import ./gaming.nix)]                    # packages related to gaming
     ++ [(import ./git.nix)]                       # version control
     ++ [(import ./gtk.nix)]                       # gtk theme
+    ++ [(import ./gnome.nix)]                     # gnome apps   
     ++ [(import ./hyprland)]                      # window manager
     ++ [(import ./kitty.nix)]                     # terminal
     ++ [(import ./swaync/swaync.nix)]             # notification deamon
@@ -25,5 +26,6 @@
     ++ [(import ./vscodium.nix)]                  # vscode forck
     ++ [(import ./waybar)]                        # status bar
     ++ [(import ./zsh.nix)]                       # shell
+    ++ [(import ./xdg-mimes.nix)]                 # xdg default apps
     ++ [(import ./python.nix)];                   # python
 }

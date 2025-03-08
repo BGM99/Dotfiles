@@ -9,7 +9,6 @@ in
     audacity
     bitwise                           # cli tool for bit / hex manipulation
     cbonsai                           # terminal screensaver
-    evince                            # gnome pdf viewer
     eza                               # ls replacement
     entr                              # perform action when file change
     nixfmt-rfc-style                  # nix formatter
@@ -25,7 +24,6 @@ in
     jdk17                             # java
     lazygit
     libreoffice
-    nautilus     # file manager
     nitch                             # systhem fetch util
     nix-prefetch-github
     pipes                             # terminal screensaver
