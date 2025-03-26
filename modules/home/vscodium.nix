@@ -24,6 +24,7 @@
 
       # PDF
       tomoki1207.pdf
+      marp-team.marp-vscode
 
       # Color themes
       #catppuccin.catppuccin-vsc
