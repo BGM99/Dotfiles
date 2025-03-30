@@ -10,6 +10,7 @@
       ppkgs.pip
       ppkgs.scikit-learn
       ppkgs.pandas
+      ppkgs.seaborn
     ]))
   ];
 }

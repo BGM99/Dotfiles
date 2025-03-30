@@ -18,6 +18,7 @@ in
     fzf                               # fuzzy finder
     gtt                               # google translate TUI
     gifsicle                          # gif utility
+    obs-studio
     gimp
     gtrash                            # rm replacement, put deleted files in system trash
     hexdump
@@ -59,6 +60,7 @@ in
     # IDE Apps
     jetbrains.clion
     jetbrains.pycharm-professional
+    jetbrains.pycharm-community-src
     jetbrains.rust-rover
     jetbrains.idea-community-src
     jetbrains.rider
