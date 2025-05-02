@@ -31,7 +31,7 @@ in
     prismlauncher                     # minecraft launcher
     ripgrep                           # grep replacement
     soundwireserver                   # pass audio to android phone
-    treefmt2                          # project formatter
+    treefmt                           # project formatter
     tdf                               # cli pdf viewer
     todo                              # cli todo list
     toipe                             # typing test in the terminal
@@ -64,7 +64,7 @@ in
     jetbrains.rust-rover
     jetbrains.idea-community-src
     jetbrains.rider
-    godot_4
+    godot
 
     # C / C++
     gcc

@@ -18,7 +18,7 @@
         "fzf"
       ];
     };
-    initExtraFirst = ''
+    initContent = ''
       DISABLE_MAGIC_FUNCTIONS=true
       export "MICRO_TRUECOLOR=1"
     '';
