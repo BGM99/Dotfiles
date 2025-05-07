@@ -50,7 +50,7 @@
       rb = "sudo nixos-rebuild switch --flake ~/Dotfiles#${host}";
       rbug = "sudo nixos-rebuild switch --upgrade --flake ~/Dotfiles#${host}";
       update = "sudo nix flake update --flake ~/Dotfiles";
-      nix-clean = "sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo rm /nix/var/nix/gcroots/auto/* && nix-collect-garbage && nix-collect-garbage -d";
+      nix-clean = "sudo nix-collect-garbage -d";
 
       # Git
       ga = "git add";
