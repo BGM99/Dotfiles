@@ -9,15 +9,12 @@
         bbenoist.nix
         # nix-shell suport
         arrterian.nix-env-selector
+
         # python
         ms-python.python
-        # C/C++
-        ms-vscode.cpptools
+
         # Docker
         ms-azuretools.vscode-docker
-
-        # Github Actions
-        github.vscode-github-actions
 
         # Haskell
         justusadam.language-haskell

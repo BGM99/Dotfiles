@@ -26,6 +26,7 @@ in
     lazygit
     libreoffice
     nitch                             # systhem fetch util
+    onefetch
     nix-prefetch-github
     pipes                             # terminal screensaver
     prismlauncher                     # minecraft launcher
