@@ -52,12 +52,12 @@ in
     #pscircle                          # process
     prusa-slicer
     qFlipper
-    nodejs_23
 
     #music
     musescore
     helio-workstation
     vital
+    #zrythm
 
     # IDE Apps
     jetbrains.clion
