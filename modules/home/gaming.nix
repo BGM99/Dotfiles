@@ -27,8 +27,8 @@
 
     ## Emulation
     sameboy
-    snes9x
     # cemu
-    # dolphin-emu
+
+    openmw
   ];
 }

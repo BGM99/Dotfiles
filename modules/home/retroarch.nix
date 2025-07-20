@@ -1,16 +1,14 @@
-{ pkgs, ... }:
-{
-  home.packages = (
-    with pkgs;
-    [
-      #  (retroarch.override {
-      #    cores = with libretro; [
-      #      fceumm
-      #      gambatte
-      #      mgba
-      #      snes9x
-      #    ];
-      #  })
-    ]
-  );
+{pkgs, ...}: {
+  home.packages = with pkgs; [
+    dolphin-emu
+    pcsx2
+    (retroarch.withCores (cores:
+      with cores; [
+        beetle-psx
+        dolphin
+        mesen
+        mgba
+        snes9x
+      ]))
+  ];
 }
