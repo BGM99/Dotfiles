@@ -16,6 +16,7 @@
     _2048-in-terminal
     vitetris
     nethack
+    cl-wordle
 
     ## Celeste
     celeste-classic

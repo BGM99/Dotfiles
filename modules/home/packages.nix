@@ -45,6 +45,7 @@ in
     wineWowPackages.wayland
     drawio
     brave
+    tor-browser
     thunderbird
     keepassxc
     insomnia
@@ -52,6 +53,7 @@ in
     #pscircle                          # process
     prusa-slicer
     qFlipper
+    obsidian
 
     #music
     musescore
