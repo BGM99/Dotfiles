@@ -55,7 +55,11 @@ in
     qFlipper
     obsidian
 
-    #music
+    # photography
+    rawtherapee
+    #darktable
+
+    # music
     musescore
     helio-workstation
     vital
