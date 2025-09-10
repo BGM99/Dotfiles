@@ -49,7 +49,7 @@ in
     thunderbird
     keepassxc
     insomnia
-    blender
+    #blender
     #pscircle                          # process
     prusa-slicer
     qFlipper
@@ -86,6 +86,10 @@ in
     ghc
     haskell-language-server
     cabal-install
+
+    # Latex
+    texliveFull
+    texstudio
 
     bleachbit                         # cache cleaner
     cmatrix
