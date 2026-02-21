@@ -3,6 +3,8 @@
   wayland.windowManager.hyprland = {
     settings = {
 
+      "$mod" = "SUPER";
+
       # monitor settings from nwg-displays
       source = "~/.config/hypr/monitors.conf";
 
@@ -33,15 +35,12 @@
       };
 
       general = {
-        "$mainMod" = "SUPER";
         layout = "dwindle";
         gaps_in = 0;
         gaps_out = 0;
         border_size = 2;
         "col.active_border" = "rgb(cba6f7) rgb(94e2d5) 45deg";
         "col.inactive_border" = "0x00000000";
-        #border_part_of_window = false;
-        no_border_on_floating = false;
       };
 
       misc = {
@@ -70,16 +69,11 @@
 
       decoration = {
         rounding = 0;
-        # active_opacity = 0.90;
-        # inactive_opacity = 0.90;
-        # fullscreen_opacity = 1.0;
 
         blur = {
           enabled = true;
           size = 1;
           passes = 1;
-          # size = 4;
-          # passes = 2;
           brightness = 1;
           contrast = 1.400;
           ignore_opacity = true;
@@ -128,78 +122,78 @@
 
       bind = [
         # show keybinds list
-        "$mainMod, F1, exec, show-keybinds"
+        "$mod, F1, exec, show-keybinds"
 
         # keybindings
-        "$mainMod, Return, exec, kitty"
+        "$mod, Return, exec, kitty"
         "ALT, Return, exec, kitty --title float_kitty"
-        "$mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'"
-        "$mainMod, B, exec, hyprctl dispatch exec '[workspace 1 silent] floorp'"
-        "$mainMod, Q, killactive,"
-        "$mainMod, F, fullscreen, 0"
-        "$mainMod SHIFT, F, fullscreen, 1"
-        "$mainMod, Space, togglefloating,"
-        "$mainMod, D, exec, fuzzel"
-        "$mainMod SHIFT, D, exec, hyprctl dispatch exec '[workspace 4 silent] discord --enable-features=UseOzonePlatform --ozone-platform=wayland'"
-        "$mainMod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
-        "$mainMod, Escape, exec, swaylock"
-        "$mainMod SHIFT, Escape, exec, shutdown-script"
-        "$mainMod, P, pseudo,"
-        "$mainMod, J, togglesplit,"
-        "$mainMod, E, exec, nautilus"
-        "$mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped"
-        "$mainMod, C ,exec, codium"
-        "$mainMod, W,exec, wallpaper-picker"
-        "$mainMod SHIFT, W, exec, live-wp-picker"
+        "$mod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'"
+        "$mod, B, exec, hyprctl dispatch exec '[workspace 1 silent] floorp'"
+        "$mod, Q, killactive,"
+        "$mod, F, fullscreen, 0"
+        "$mod SHIFT, F, fullscreen, 1"
+        "$mod, Space, togglefloating,"
+        "$mod, D, exec, fuzzel"
+        "$mod SHIFT, D, exec, hyprctl dispatch exec '[workspace 4 silent] discord --enable-features=UseOzonePlatform --ozone-platform=wayland'"
+        "$mod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
+        "$mod, Escape, exec, swaylock"
+        "$mod SHIFT, Escape, exec, shutdown-script"
+        "$mod, P, pseudo,"
+        "$mod, J, togglesplit,"
+        "$mod, E, exec, nautilus"
+        "$mod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped"
+        "$mod, C ,exec, codium"
+        "$mod, W,exec, wallpaper-picker"
+        "$mod SHIFT, W, exec, live-wp-picker"
 
         # screenshot
-        "$mainMod, Print, exec, grimblast --notify --cursor --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
+        "$mod, Print, exec, grimblast --notify --cursor --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
         ",Print, exec, grimblast --notify --cursor --freeze copy area"
 
         # switch focus
-        "$mainMod, left, movefocus, l"
-        "$mainMod, right, movefocus, r"
-        "$mainMod, up, movefocus, u"
-        "$mainMod, down, movefocus, d"
+        "$mod, left, movefocus, l"
+        "$mod, right, movefocus, r"
+        "$mod, up, movefocus, u"
+        "$mod, down, movefocus, d"
 
         # switch workspace
-        "$mainMod, 1, workspace, 1"
-        "$mainMod, 2, workspace, 2"
-        "$mainMod, 3, workspace, 3"
-        "$mainMod, 4, workspace, 4"
-        "$mainMod, 5, workspace, 5"
-        "$mainMod, 6, workspace, 6"
-        "$mainMod, 7, workspace, 7"
-        "$mainMod, 8, workspace, 8"
-        "$mainMod, 9, workspace, 9"
-        "$mainMod, 0, workspace, 10"
+        "$mod, 1, workspace, 1"
+        "$mod, 2, workspace, 2"
+        "$mod, 3, workspace, 3"
+        "$mod, 4, workspace, 4"
+        "$mod, 5, workspace, 5"
+        "$mod, 6, workspace, 6"
+        "$mod, 7, workspace, 7"
+        "$mod, 8, workspace, 8"
+        "$mod, 9, workspace, 9"
+        "$mod, 0, workspace, 10"
 
         # same as above, but switch to the workspace
-        "$mainMod SHIFT, 1, movetoworkspacesilent, 1" # movetoworkspacesilent
-        "$mainMod SHIFT, 2, movetoworkspacesilent, 2"
-        "$mainMod SHIFT, 3, movetoworkspacesilent, 3"
-        "$mainMod SHIFT, 4, movetoworkspacesilent, 4"
-        "$mainMod SHIFT, 5, movetoworkspacesilent, 5"
-        "$mainMod SHIFT, 6, movetoworkspacesilent, 6"
-        "$mainMod SHIFT, 7, movetoworkspacesilent, 7"
-        "$mainMod SHIFT, 8, movetoworkspacesilent, 8"
-        "$mainMod SHIFT, 9, movetoworkspacesilent, 9"
-        "$mainMod SHIFT, 0, movetoworkspacesilent, 10"
-        "$mainMod CTRL, c, movetoworkspace, empty"
+        "$mod SHIFT, 1, movetoworkspacesilent, 1" # movetoworkspacesilent
+        "$mod SHIFT, 2, movetoworkspacesilent, 2"
+        "$mod SHIFT, 3, movetoworkspacesilent, 3"
+        "$mod SHIFT, 4, movetoworkspacesilent, 4"
+        "$mod SHIFT, 5, movetoworkspacesilent, 5"
+        "$mod SHIFT, 6, movetoworkspacesilent, 6"
+        "$mod SHIFT, 7, movetoworkspacesilent, 7"
+        "$mod SHIFT, 8, movetoworkspacesilent, 8"
+        "$mod SHIFT, 9, movetoworkspacesilent, 9"
+        "$mod SHIFT, 0, movetoworkspacesilent, 10"
+        "$mod CTRL, c, movetoworkspace, empty"
 
         # window control
-        "$mainMod SHIFT, left, movewindow, l"
-        "$mainMod SHIFT, right, movewindow, r"
-        "$mainMod SHIFT, up, movewindow, u"
-        "$mainMod SHIFT, down, movewindow, d"
-        "$mainMod CTRL, left, resizeactive, -80 0"
-        "$mainMod CTRL, right, resizeactive, 80 0"
-        "$mainMod CTRL, up, resizeactive, 0 -80"
-        "$mainMod CTRL, down, resizeactive, 0 80"
-        "$mainMod ALT, left, moveactive,  -80 0"
-        "$mainMod ALT, right, moveactive, 80 0"
-        "$mainMod ALT, up, moveactive, 0 -80"
-        "$mainMod ALT, down, moveactive, 0 80"
+        "$mod SHIFT, left, movewindow, l"
+        "$mod SHIFT, right, movewindow, r"
+        "$mod SHIFT, up, movewindow, u"
+        "$mod SHIFT, down, movewindow, d"
+        "$mod CTRL, left, resizeactive, -80 0"
+        "$mod CTRL, right, resizeactive, 80 0"
+        "$mod CTRL, up, resizeactive, 0 -80"
+        "$mod CTRL, down, resizeactive, 0 80"
+        "$mod ALT, left, moveactive,  -80 0"
+        "$mod ALT, right, moveactive, 80 0"
+        "$mod ALT, up, moveactive, 0 -80"
+        "$mod ALT, down, moveactive, 0 80"
 
         # media and volume controls
         ",XF86AudioRaiseVolume,exec, pamixer -i 2"
@@ -209,115 +203,23 @@
         ",XF86AudioNext,exec, playerctl next"
         ",XF86AudioPrev,exec, playerctl previous"
         ",XF86AudioStop, exec, playerctl stop"
-        "$mainMod, mouse_down, workspace, e-1"
-        "$mainMod, mouse_up, workspace, e+1"
+        "$mod, mouse_down, workspace, e-1"
+        "$mod, mouse_up, workspace, e+1"
 
         # laptop brigthness
         ",XF86MonBrightnessUp, exec, brightnessctl set 5%+"
         ",XF86MonBrightnessDown, exec, brightnessctl set 5%-"
-        "$mainMod, XF86MonBrightnessUp, exec, brightnessctl set 100%+"
-        "$mainMod, XF86MonBrightnessDown, exec, brightnessctl set 100%-"
+        "$mod, XF86MonBrightnessUp, exec, brightnessctl set 100%+"
+        "$mod, XF86MonBrightnessDown, exec, brightnessctl set 100%-"
 
         # clipboard manager
-        "$mainMod, V, exec, cliphist list | fuzzel --dmenu | cliphist decode | wl-copy"
+        "$mod, V, exec, cliphist list | fuzzel --dmenu | cliphist decode | wl-copy"
       ];
 
       # mouse binding
       bindm = [
-        "$mainMod, mouse:272, movewindow"
-        "$mainMod, mouse:273, resizewindow"
-      ];
-
-      # windowrule
-      windowrule = [
-        "float, class:^(imv)$"
-        "center, class:^(imv)$"
-        "size 1200 725, class:^(imv)$"
-        "float, class:^(mpv)$"
-        "center, class:^(mpv)$"
-        "tile, class:^(Aseprite)$"
-        "size 1200 725, class:^(mpv)$"
-        "float, title:^(float_kitty)$"
-        "center, title:^(float_kitty)$"
-        "size 950 600, title:^(float_kitty)$"
-        "float, class:^(audacious)$"
-        "workspace 8 silent, class:^(audacious)$"
-        # "pin,wofi"
-        # "float,wofi"
-        # "noborder,wofi"
-        "tile, class:^(neovide)$"
-        "idleinhibit focus, class:^(mpv)$"
-        "float, class:^(udiskie)$"
-        "float, title:^(Transmission)$"
-        "float, title:^(Volume Control)$"
-        "float, title:^(Firefox — Sharing Indicator)$"
-        "move 0 0, title:^(Firefox — Sharing Indicator)$"
-        "size 700 450, title:^(Volume Control)$"
-        "move 40 55%, title:^(Volume Control)$"
-      ];
-
-      # windowrulev2
-      windowrulev2 = [
-        "float, title:^(Picture-in-Picture)$"
-        "opacity 1.0 override 1.0 override, title:^(Picture-in-Picture)$"
-        "pin, title:^(Picture-in-Picture)$"
-        "opacity 1.0 override 1.0 override, title:^(.*imv.*)$"
-        "opacity 1.0 override 1.0 override, title:^(.*mpv.*)$"
-        "opacity 1.0 override 1.0 override, class:(Aseprite)"
-        "opacity 1.0 override 1.0 override, class:(Unity)"
-        "idleinhibit focus, class:^(mpv)$"
-        "idleinhibit fullscreen, class:^(firefox)$"
-        "float,class:^(zenity)$"
-        "center,class:^(zenity)$"
-        "size 850 500,class:^(zenity)$"
-        "float,class:^(pavucontrol)$"
-        "float,class:^(SoundWireServer)$"
-        "float,class:^(.sameboy-wrapped)$"
-        "float,class:^(file_progress)$"
-        "float,class:^(confirm)$"
-        "float,class:^(dialog)$"
-        "float,class:^(download)$"
-        "float,class:^(notification)$"
-        "float,class:^(error)$"
-        "float,class:^(confirmreset)$"
-        "float,title:^(Open File)$"
-        "float,title:^(branchdialog)$"
-        "float,title:^(Confirm to replace files)$"
-        "float,title:^(File Operation Progress)$"
-
-        "opacity 0.0 override,class:^(xwaylandvideobridge)$"
-        "noanim,class:^(xwaylandvideobridge)$"
-        "noinitialfocus,class:^(xwaylandvideobridge)$"
-        "maxsize 1 1,class:^(xwaylandvideobridge)$"
-        "noblur,class:^(xwaylandvideobridge)$"
-
-        # -- Fix odd behaviors in IntelliJ IDEs --
-        #! Fix splash screen showing in weird places and prevent annoying focus takeovers
-        "center,class:^(jetbrains-.*)$,title:^(splash)$,floating:1"
-        "nofocus,class:^(jetbrains-.*)$,title:^(splash)$,floating:1"
-        "noborder,class:^(jetbrains-.*)$,title:^(splash)$,floating:1"
-
-        #! Center popups/find windows
-        "center,class:^(jetbrains-.*)$,title:^( )$,floating:1"
-        "stayfocused,class:^(jetbrains-.*)$,title:^( )$,floating:1"
-        "noborder,class:^(jetbrains-.*)$,title:^( )$,floating:1"
-        #! Disable window flicker when autocomplete or tooltips appear
-        "nofocus,class:^(jetbrains-.*)$,title:^(win.*)$,floating:1 ]"
-
-        # No gaps when only
-        "bordersize 0, floating:0, onworkspace:w[t1]"
-        "rounding 0, floating:0, onworkspace:w[t1]"
-        "bordersize 0, floating:0, onworkspace:w[tg1]"
-        "rounding 0, floating:0, onworkspace:w[tg1]"
-        "bordersize 0, floating:0, onworkspace:f[1]"
-        "rounding 0, floating:0, onworkspace:f[1]"
-      ];
-
-      # No gaps when only
-      workspace = [
-        "w[t1], gapsout:0, gapsin:0"
-        "w[tg1], gapsout:0, gapsin:0"
-        "f[1], gapsout:0, gapsin:0"
+        "$mod, mouse:272, movewindow"
+        "$mod, mouse:273, resizewindow"
       ];
     };
 

@@ -4,7 +4,7 @@ let
 in
 {
   home.packages = (with pkgs; [
-    _2048
+    #_2048
     
     audacity
     bitwise                           # cli tool for bit / hex manipulation
@@ -67,10 +67,8 @@ in
 
     # IDE Apps
     jetbrains.clion
-    jetbrains.pycharm-professional
-    jetbrains.pycharm-community-src
+    jetbrains.pycharm
     jetbrains.rust-rover
-    jetbrains.idea-community-src
     jetbrains.rider
     godot
 
@@ -111,6 +109,7 @@ in
     poweralertd
     qalculate-gtk                     # calculator
     unzip
+    unixtools.ifconfig
     wget
     xdg-utils
     xxd

@@ -211,30 +211,30 @@ runbg.sh
 
 ### ⌨️ Keybinds
 
-View all keybinds by pressing ```$mainMod F1``` and wallpaper picker by pressing ```$mainMod w```. By default ```$mainMod``` is the ```SUPER``` key. 
+View all keybinds by pressing ```$mod F1``` and wallpaper picker by pressing ```$mod w```. By default ```$mod``` is the ```SUPER``` key. 
 
 <details>
 <summary>
 Keybindings 
 </summary>
 
-- ```bind = $mainMod, Return, exec, kitty```
+- ```bind = $mod, Return, exec, kitty```
 - ```bind = ALT, Return, exec, kitty --title float_kitty```
-- ```bind = $mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'```
-- ```bind = $mainMod, B, exec, firefox```
-- ```bind = $mainMod, Q, killactive,```
-- ```bind = $mainMod, F, fullscreen, 0```
-- ```bind = $mainMod SHIFT, F, fullscreen, 1```
-- ```bind = $mainMod, Space, togglefloating,```
-- ```bind = $mainMod, D, exec, fuzzel```
-- ```bind = $mainMod, Escape, exec, swaylock```
-- ```bind = $mainMod SHIFT, Escape, exec, shutdown-script```
-- ```bind = $mainMod, P, pseudo,```
-- ```bind = $mainMod, J, togglesplit,```
-- ```bind = $mainMod, E, exec, nemo```
-- ```bind = $mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped```
-- ```bind = $mainMod, C ,exec, hyprpicker -a```
-- ```bind = $mainMod, W,exec, wallpaper-picker```
+- ```bind = $mod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'```
+- ```bind = $mod, B, exec, firefox```
+- ```bind = $mod, Q, killactive,```
+- ```bind = $mod, F, fullscreen, 0```
+- ```bind = $mod SHIFT, F, fullscreen, 1```
+- ```bind = $mod, Space, togglefloating,```
+- ```bind = $mod, D, exec, fuzzel```
+- ```bind = $mod, Escape, exec, swaylock```
+- ```bind = $mod SHIFT, Escape, exec, shutdown-script```
+- ```bind = $mod, P, pseudo,```
+- ```bind = $mod, J, togglesplit,```
+- ```bind = $mod, E, exec, nemo```
+- ```bind = $mod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped```
+- ```bind = $mod, C ,exec, hyprpicker -a```
+- ```bind = $mod, W,exec, wallpaper-picker```
 </details>
 
 <details>
@@ -242,7 +242,7 @@ Keybindings
 Screenshot 
 </summary>
 
-- ```bind = $mainMod, Print, exec, grimblast --notify --cursor save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png```
+- ```bind = $mod, Print, exec, grimblast --notify --cursor save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png```
 - ```bind = ,Print, exec, grimblast --notify --cursor  copy area```
 </details>
 
@@ -251,10 +251,10 @@ Screenshot
 Switch window focus 
 </summary>
 
-- ```bind = $mainMod, left, movefocus, l```
-- ```bind = $mainMod, right, movefocus, r```
-- ```bind = $mainMod, up, movefocus, u```
-- ```bind = $mainMod, down, movefocus, d```
+- ```bind = $mod, left, movefocus, l```
+- ```bind = $mod, right, movefocus, r```
+- ```bind = $mod, up, movefocus, u```
+- ```bind = $mod, down, movefocus, d```
 </details>
 
 <details>
@@ -262,16 +262,16 @@ Switch window focus
 Switch workspace 
 </summary>
 
-- ```bind = $mainMod, 1, workspace, 1```
-- ```bind = $mainMod, 2, workspace, 2```
-- ```bind = $mainMod, 3, workspace, 3```
-- ```bind = $mainMod, 4, workspace, 4```
-- ```bind = $mainMod, 5, workspace, 5```
-- ```bind = $mainMod, 6, workspace, 6```
-- ```bind = $mainMod, 7, workspace, 7```
-- ```bind = $mainMod, 8, workspace, 8```
-- ```bind = $mainMod, 9, workspace, 9```
-- ```bind = $mainMod, 0, workspace, 10```
+- ```bind = $mod, 1, workspace, 1```
+- ```bind = $mod, 2, workspace, 2```
+- ```bind = $mod, 3, workspace, 3```
+- ```bind = $mod, 4, workspace, 4```
+- ```bind = $mod, 5, workspace, 5```
+- ```bind = $mod, 6, workspace, 6```
+- ```bind = $mod, 7, workspace, 7```
+- ```bind = $mod, 8, workspace, 8```
+- ```bind = $mod, 9, workspace, 9```
+- ```bind = $mod, 0, workspace, 10```
 </details>
 
 <details>
@@ -279,17 +279,17 @@ Switch workspace
 Switch window to workspace 
 </summary>
 
-- ```bind = $mainMod SHIFT, 1, movetoworkspace, 1```
-- ```bind = $mainMod SHIFT, 2, movetoworkspace, 2```
-- ```bind = $mainMod SHIFT, 3, movetoworkspace, 3```
-- ```bind = $mainMod SHIFT, 4, movetoworkspace, 4```
-- ```bind = $mainMod SHIFT, 5, movetoworkspace, 5```
-- ```bind = $mainMod SHIFT, 6, movetoworkspace, 6```
-- ```bind = $mainMod SHIFT, 7, movetoworkspace, 7```
-- ```bind = $mainMod SHIFT, 8, movetoworkspace, 8```
-- ```bind = $mainMod SHIFT, 9, movetoworkspace, 9```
-- ```bind = $mainMod SHIFT, 0, movetoworkspace, 10```
-- ```bind = $mainMod CTRL, c, movetoworkspace, empty```
+- ```bind = $mod SHIFT, 1, movetoworkspace, 1```
+- ```bind = $mod SHIFT, 2, movetoworkspace, 2```
+- ```bind = $mod SHIFT, 3, movetoworkspace, 3```
+- ```bind = $mod SHIFT, 4, movetoworkspace, 4```
+- ```bind = $mod SHIFT, 5, movetoworkspace, 5```
+- ```bind = $mod SHIFT, 6, movetoworkspace, 6```
+- ```bind = $mod SHIFT, 7, movetoworkspace, 7```
+- ```bind = $mod SHIFT, 8, movetoworkspace, 8```
+- ```bind = $mod SHIFT, 9, movetoworkspace, 9```
+- ```bind = $mod SHIFT, 0, movetoworkspace, 10```
+- ```bind = $mod CTRL, c, movetoworkspace, empty```
 </details>
 
 <details>
@@ -297,18 +297,18 @@ Switch window to workspace
 Window control 
 </summary>
 
-- ```bind = $mainMod SHIFT, left, movewindow, l```
-- ```bind = $mainMod SHIFT, right, movewindow, r```
-- ```bind = $mainMod SHIFT, up, movewindow, u```
-- ```bind = $mainMod SHIFT, down, movewindow, d```
-- ```bind = $mainMod CTRL, left, resizeactive, -80 0```
-- ```bind = $mainMod CTRL, right, resizeactive, 80 0```
-- ```bind = $mainMod CTRL, up, resizeactive, 0 -80```
-- ```bind = $mainMod CTRL, down, resizeactive, 0 80```
-- ```bind = $mainMod ALT, left, moveactive,  -80 0```
-- ```bind = $mainMod ALT, right, moveactive, 80 0```
-- ```bind = $mainMod ALT, up, moveactive, 0 -80```
-- ```bind = $mainMod ALT, down, moveactive, 0 80```
+- ```bind = $mod SHIFT, left, movewindow, l```
+- ```bind = $mod SHIFT, right, movewindow, r```
+- ```bind = $mod SHIFT, up, movewindow, u```
+- ```bind = $mod SHIFT, down, movewindow, d```
+- ```bind = $mod CTRL, left, resizeactive, -80 0```
+- ```bind = $mod CTRL, right, resizeactive, 80 0```
+- ```bind = $mod CTRL, up, resizeactive, 0 -80```
+- ```bind = $mod CTRL, down, resizeactive, 0 80```
+- ```bind = $mod ALT, left, moveactive,  -80 0```
+- ```bind = $mod ALT, right, moveactive, 80 0```
+- ```bind = $mod ALT, up, moveactive, 0 -80```
+- ```bind = $mod ALT, down, moveactive, 0 80```
 </details>
 
 <details>
@@ -323,8 +323,8 @@ Media and volume controls
 - ```bind = ,XF86AudioNext,exec, playerctl next```
 - ```bind = ,XF86AudioPrev,exec, playerctl previous```
 - ```bind = , XF86AudioStop, exec, playerctl stop```
-- ```bind = $mainMod, mouse_down, workspace, e-1```
-- ```bind = $mainMod, mouse_up, workspace, e+1```
+- ```bind = $mod, mouse_down, workspace, e-1```
+- ```bind = $mod, mouse_up, workspace, e+1```
 </details>
 
 <details>
@@ -332,8 +332,8 @@ Media and volume controls
 Mouse binding 
 </summary>
 
-- ```bindm = $mainMod, mouse:272, movewindow```
-- ```bindm = $mainMod, mouse:273, resizewindow```
+- ```bindm = $mod, mouse:272, movewindow```
+- ```bindm = $mod, mouse:273, resizewindow```
 </details>
 
 # 🚀 Installation 
