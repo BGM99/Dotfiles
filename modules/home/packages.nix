@@ -1,17 +1,12 @@
 { inputs, pkgs, pkgs-unstable, ... }: 
-let 
-  _2048 = pkgs.callPackage ../../pkgs/2048/default.nix {}; 
-in
 {
   home.packages = (with pkgs; [
-    #_2048
-    
     audacity
     bitwise                           # cli tool for bit / hex manipulation
     cbonsai                           # terminal screensaver
     eza                               # ls replacement
     entr                              # perform action when file change
-    nixfmt-rfc-style                  # nix formatter
+    nixfmt                            # nix formatter
     shfmt                             # bash formatter
     fd                                # find replacement
     file                              # Show file information 
@@ -42,8 +37,10 @@ in
     zenity
     winetricks
     nwg-displays
-    wineWowPackages.wayland
+    wineWow64Packages.wayland
     drawio
+    localsend
+    signal-desktop-bin
     brave
     tor-browser
     thunderbird

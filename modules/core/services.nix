@@ -7,7 +7,7 @@
     fstrim.enable = true;
     logind.settings.Login = {
       # don’t shutdown when power button is short-pressed
-      HandlePowerKey="ignore";
+      HandlePowerKey = "ignore";
       # ignore lid close when docked/external monitor conected
       HandleLidSwitchDocked = "ignore";
     };

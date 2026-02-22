@@ -3,10 +3,9 @@
   programs.git = {
     enable = true;
 
-    userName = "BGM99";
-    userEmail = "45606744+BGM99@users.noreply.github.com";
-
-    extraConfig = {
+    settings = {
+      user.name = "BGM99";
+      user.email = "45606744+BGM99@users.noreply.github.com";
       init.defaultBranch = "main";
       credential.helper = "store";
     };
