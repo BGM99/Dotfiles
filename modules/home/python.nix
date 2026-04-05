@@ -11,6 +11,7 @@
       ppkgs.scikit-learn
       ppkgs.pandas
       ppkgs.seaborn
+      ppkgs.pypng
     ]))
   ];
 }

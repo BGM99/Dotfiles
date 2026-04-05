@@ -12,10 +12,12 @@
         443
         59010
         59011
+        53317
       ];
       allowedUDPPorts = [
         59010
         59011
+        53317
       ];
       # allowedUDPPortRanges = [
       # { from = 4000; to = 4007; }
