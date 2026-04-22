@@ -86,6 +86,10 @@
     texliveFull
     texstudio
 
+    # vhdl
+    quartus-prime-lite
+    ghdl
+
     bleachbit                         # cache cleaner
     cmatrix
     gparted                           # partition manager

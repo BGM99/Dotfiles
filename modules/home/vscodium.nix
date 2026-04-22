@@ -16,6 +16,9 @@
         # Docker
         ms-azuretools.vscode-docker
 
+        # vhdl
+        teros-technology.teroshdl
+
         # Haskell
         justusadam.language-haskell
         haskell.haskell
