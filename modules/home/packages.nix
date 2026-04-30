@@ -90,6 +90,12 @@
     quartus-prime-lite
     ghdl
 
+    # network tools
+    traceroute
+    unixtools.ifconfig
+    wget
+    openssl
+
     bleachbit                         # cache cleaner
     cmatrix
     gparted                           # partition manager
@@ -101,7 +107,6 @@
 	  man-pages					            	  # extra man pages
     mpv                               # video player
     ncdu                              # disk space
-    openssl
     pamixer                           # pulseaudio command line mixer
     pavucontrol                       # pulseaudio volume controle (GUI)
     playerctl                         # controller for media players
@@ -110,8 +115,6 @@
     poweralertd
     qalculate-gtk                     # calculator
     unzip
-    unixtools.ifconfig
-    wget
     xdg-utils
     xxd
     inputs.alejandra.defaultPackage.${system}
