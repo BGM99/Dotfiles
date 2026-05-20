@@ -19,6 +19,10 @@
         # vhdl
         teros-technology.teroshdl
 
+        # zig
+        ziglang.vscode-zig
+        vadimcn.vscode-lldb
+
         # Haskell
         justusadam.language-haskell
         haskell.haskell
@@ -72,6 +76,7 @@
         "editor.scrollbar.horizontal" = "hidden";
         "workbench.layoutControl.enabled" = false;
         "terminal.integrated.initialHint" = false;
+        "zig.zls.enabled" = "on";
 
         "editor.mouseWheelZoom" = true;
       };

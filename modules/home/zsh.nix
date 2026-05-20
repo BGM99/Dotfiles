@@ -51,6 +51,8 @@
       rbug = "sudo nixos-rebuild switch --upgrade --flake ~/Dotfiles#${host}";
       update = "sudo nix flake update --flake ~/Dotfiles";
       nix-clean = "sudo nix-collect-garbage -d";
+      # master-shell = "nix shell github:NixOS/nixpkgs/master#";
+      master-shell = "function _master_shell() { nix shell github:NixOS/nixpkgs/master#\${1} }; _master_shell";
 
       # Git
       ga = "git add";

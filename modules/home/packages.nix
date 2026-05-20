@@ -73,6 +73,7 @@
     gcc
     gnumake
     cmake
+    glibc.static
 
     # C#
     mono
@@ -90,11 +91,20 @@
     quartus-prime-lite
     ghdl
 
+    # zig
+    zig
+    gdb
+
     # network tools
     traceroute
     unixtools.ifconfig
+    #rustnet                          # terminal per process monitoring
     wget
     openssl
+
+    # kubernetes
+    kubectl
+    k9s
 
     bleachbit                         # cache cleaner
     cmatrix
