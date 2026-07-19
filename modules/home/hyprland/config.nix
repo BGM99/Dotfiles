@@ -143,6 +143,7 @@
         "$mod, E, exec, nautilus"
         "$mod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped"
         "$mod, C ,exec, codium"
+        "$mod, O ,exec, obsidian"
         "$mod, W,exec, wallpaper-picker"
         "$mod SHIFT, W, exec, live-wp-picker"
 

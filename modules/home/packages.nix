@@ -1,6 +1,7 @@
 { inputs, pkgs, pkgs-unstable, ... }: 
 {
   home.packages = (with pkgs; [
+    android-tools                     # android debug bridge
     audacity
     bitwise                           # cli tool for bit / hex manipulation
     cbonsai                           # terminal screensaver
