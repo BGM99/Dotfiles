@@ -74,7 +74,7 @@
 | **Screen Recording**        | [wf-recorder][wf-recorder] |
 | **Clipboard**               | [wl-clip-persist][wl-clip-persist] |
 | **Color Picker**            | [hyprpicker][hyprpicker] |
-| **Wallpaper Controller**    | [swww][swww] |
+| **Wallpaper Controller**    | [awww][awww] |
 
 
 ### 📝 Shell aliases
@@ -478,4 +478,4 @@ Other dotfiles that I learned / copy from:
 [catppuccin-papirus-folders]: https://github.com/catppuccin/papirus-folders
 [Nordzy-cursors]: https://github.com/alvatip/Nordzy-cursors
 [maxfetch]: https://github.com/jobcmax/maxfetch
-[swww]: https://github.com/LGFae/swww
+[awww]: https://codeberg.org/LGFae/awww

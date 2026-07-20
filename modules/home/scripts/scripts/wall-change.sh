@@ -8,4 +8,4 @@
 #  echo "$PIDS" | xargs kill
 #fi
 
-swww img $1
+awww img $1
