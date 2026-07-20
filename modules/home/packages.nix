@@ -41,7 +41,7 @@
     wineWow64Packages.wayland
     drawio
     localsend
-    signal-desktop-bin
+    signal-desktop
     brave
     tor-browser
     thunderbird

@@ -10,6 +10,7 @@
 
   gtk = {
     enable = true;
+    gtk4.theme = null;
     font = {
       name = "JetBrainsMono Nerd Font";
       size = 11;
@@ -33,6 +34,7 @@
   };
 
   home.pointerCursor = {
+    enable = true;
     name = "Nordzy-cursors";
     package = pkgs.nordzy-cursor-theme;
     size = 22;

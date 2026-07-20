@@ -26,9 +26,6 @@
       options = "--delete-older-than 7d";
     };
   };
-  nixpkgs = {
-    overlays = [ inputs.nur.overlays.default ];
-  };
 
   environment.systemPackages = with pkgs; [
     wget
