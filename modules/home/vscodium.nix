@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{ pkgs, ... }: {
   programs.vscodium = {
     enable = true;
     profiles.default = {

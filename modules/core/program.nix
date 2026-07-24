@@ -1,4 +1,9 @@
-{ pkgs, lib, username, ... }:
+{
+  pkgs,
+  lib,
+  username,
+  ...
+}:
 {
   programs.dconf.enable = true;
   programs.zsh.enable = true;

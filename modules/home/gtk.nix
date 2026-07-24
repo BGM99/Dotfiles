@@ -1,41 +1,64 @@
-{ pkgs, config, ... }:
 {
-  fonts.fontconfig.enable = true;
-  home.packages = [
-    pkgs.nerd-fonts.jetbrains-mono
-    pkgs.nerd-fonts.noto
-    pkgs.twemoji-color-font
-    pkgs.noto-fonts-color-emoji
-  ];
-
+  lib,
+  pkgs,
+  host,
+  ...
+}:
+let
+  gtk-theme-name = "Dracula";
+  gtk-theme = pkgs.dracula-theme;
+  icon-theme-name = "Papirus-Dark";
+  cursor-theme-name = "Nordzy-cursors";
+in
+{
   gtk = {
     enable = true;
-    gtk4.theme = null;
     font = {
       name = "JetBrainsMono Nerd Font";
       size = 11;
     };
-    iconTheme = {
-      name = "Papirus-Dark";
-      package = pkgs.catppuccin-papirus-folders.override {
-        flavor = "mocha";
-        accent = "lavender";
-      };
-    };
     theme = {
-      name = "Dracula";
-      package = pkgs.dracula-theme;
+      name = gtk-theme-name;
+      package = gtk-theme;
+    };
+    iconTheme = {
+      name = icon-theme-name;
+      package = pkgs.papirus-icon-theme.override { color = "blue"; };
     };
     cursorTheme = {
-      name = "Nordzy-cursors";
+      name = cursor-theme-name;
       package = pkgs.nordzy-cursor-theme;
       size = 22;
+    };
+
+    gtk3 = {
+      extraConfig = {
+        gtk-application-prefer-dark-theme = lib.mkForce true;
+      };
+    };
+
+    gtk4 = {
+      theme = {
+        name = gtk-theme-name;
+        package = gtk-theme;
+      };
+      extraConfig = {
+        gtk-application-prefer-dark-theme = lib.mkForce true;
+      };
+    };
+  };
+
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      gtk-theme = gtk-theme-name;
+      icon-theme = icon-theme-name;
+      color-scheme = "prefer-dark";
     };
   };
 
   home.pointerCursor = {
     enable = true;
-    name = "Nordzy-cursors";
+    name = cursor-theme-name;
     package = pkgs.nordzy-cursor-theme;
     size = 22;
   };

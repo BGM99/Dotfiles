@@ -1,5 +1,4 @@
-{ inputs, pkgs, ... }:
-{
+{ inputs, pkgs, ... }: {
   home.packages = with pkgs; [
     awww
     inputs.hypr-contrib.packages.${pkgs.system}.grimblast
@@ -17,7 +16,7 @@
   ];
   wayland.windowManager.hyprland = {
     enable = true;
-
+    configType = "hyprlang";
     package = inputs.hyprland.packages.${pkgs.system}.default;
     portalPackage =
       inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland;
