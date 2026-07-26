@@ -99,7 +99,7 @@
     # network tools
     traceroute
     unixtools.ifconfig
-    #rustnet                          # terminal per process monitoring
+    rustnet                          # terminal per process monitoring
     wget
     openssl
 
