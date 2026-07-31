@@ -132,11 +132,10 @@
         "$mod, Space, togglefloating,"
         "$mod, D, exec, fuzzel"
         "$mod SHIFT, D, exec, hyprctl dispatch exec '[workspace 4 silent] discord --enable-features=UseOzonePlatform --ozone-platform=wayland'"
-        "$mod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
         "$mod, Escape, exec, swaylock"
         "$mod SHIFT, Escape, exec, shutdown-script"
         "$mod, P, pseudo,"
-        # "$mod, J, togglesplit,"
+        "$mod, J, layoutmsg, togglesplit"
         "$mod, E, exec, nautilus"
         "$mod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped"
         "$mod, C ,exec, codium"
@@ -145,8 +144,8 @@
         "$mod SHIFT, W, exec, live-wp-picker"
 
         # screenshot
-        "$mod, Print, exec, grimblast --notify --cursor --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
-        ",Print, exec, grimblast --notify --cursor --freeze copy area"
+        "$mod SHIFT, S, exec, grimblast --notify --freeze copy area"
+        ",Print, exec, grimblast --notify --cursor --freeze copy output"
 
         # switch focus
         "$mod, left, movefocus, l"
